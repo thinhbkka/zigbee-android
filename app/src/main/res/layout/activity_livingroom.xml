@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LIVINGROOM">
+
+    <TextView
+        android:id="@+id/textView1Livingroom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="123dp"
+        android:layout_marginLeft="123dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="123dp"
+        android:layout_marginRight="123dp"
+        android:text="LIVING ROOM"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView1Nhietdo"
+        android:layout_width="88dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="50dp"
+        android:text="Nhiệt độ:"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView1ShowNhietdo"
+        android:layout_width="88dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textView1Nhietdo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView1Doam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="25dp"
+        android:text="Độ ẩm:"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1Nhietdo" />
+
+    <TextView
+        android:id="@+id/textView1ShowDoam"
+        android:layout_width="88dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="25dp"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toEndOf="@+id/textView1Nhietdo"
+        app:layout_constraintTop_toBottomOf="@+id/textView1ShowNhietdo" />
+
+    <TextView
+        android:id="@+id/textView1Device1"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        android:text="Device 1"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1Doam" />
+
+    <Button
+        android:id="@+id/button1Device1on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="24dp"
+        android:text="ON"
+        app:layout_constraintStart_toEndOf="@+id/textView1Device1"
+        app:layout_constraintTop_toBottomOf="@+id/textView1ShowDoam" />
+
+    <Button
+        android:id="@+id/button1Device1off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="24dp"
+        android:text="OFF"
+        app:layout_constraintStart_toEndOf="@+id/button1Device1on"
+        app:layout_constraintTop_toBottomOf="@+id/textView1ShowDoam" />
+
+    <TextView
+        android:id="@+id/textView1Timer1"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="36dp"
+        android:text="Hẹn giờ:"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1Device1" />
+
+    <EditText
+        android:id="@+id/editText1Timer1"
+        android:layout_width="86dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textView1Timer1"
+        app:layout_constraintTop_toBottomOf="@+id/button1Device1on" />
+
+    <Button
+        android:id="@+id/button1Timer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="10dp"
+        android:text="SET"
+        app:layout_constraintStart_toEndOf="@+id/button1Device1on"
+        app:layout_constraintTop_toBottomOf="@+id/button1Device1off" />
+
+    <TextView
+        android:id="@+id/textView1Device2"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="60dp"
+        android:text="Device 2"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1Timer1" />
+
+    <Button
+        android:id="@+id/button1Device2on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="36dp"
+        android:text="ON"
+        app:layout_constraintStart_toEndOf="@+id/textView1Device2"
+        app:layout_constraintTop_toBottomOf="@+id/button1Timer1" />
+
+    <Button
+        android:id="@+id/button1Device2off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="36dp"
+        android:text="OFF"
+        app:layout_constraintStart_toEndOf="@+id/button1Device2on"
+        app:layout_constraintTop_toBottomOf="@+id/button1Timer1" />
+
+    <TextView
+        android:id="@+id/textView1Timer2"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="36dp"
+        android:text="Hẹn giờ:"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1Device2" />
+
+    <EditText
+        android:id="@+id/editText1Timer2"
+        android:layout_width="85dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textView1Timer2"
+        app:layout_constraintTop_toBottomOf="@+id/button1Device2on" />
+
+    <Button
+        android:id="@+id/button1Timer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="10dp"
+        android:text="SET"
+        app:layout_constraintStart_toEndOf="@+id/button1Device2on"
+        app:layout_constraintTop_toBottomOf="@+id/button1Device2off" />
+
+    <TextView
+        android:id="@+id/textView1Device3"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="52dp"
+        android:text="Device 3"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1Timer2" />
+
+    <Button
+        android:id="@+id/button1Device3on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="32dp"
+        android:text="ON"
+        app:layout_constraintStart_toEndOf="@+id/textView1Device3"
+        app:layout_constraintTop_toBottomOf="@+id/button1Timer2" />
+
+    <Button
+        android:id="@+id/button1Device3off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="32dp"
+        android:text="OFF"
+        app:layout_constraintStart_toEndOf="@+id/button1Device3on"
+        app:layout_constraintTop_toBottomOf="@+id/button1Timer2" />
+
+    <TextView
+        android:id="@+id/textView1Timer3"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="35dp"
+        android:text="Hẹn giờ:"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1Device3" />
+
+    <EditText
+        android:id="@+id/editText1Timer3"
+        android:layout_width="84dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textView1Timer3"
+        app:layout_constraintTop_toBottomOf="@+id/button1Device3on" />
+
+    <Button
+        android:id="@+id/button1Timer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="10dp"
+        android:text="SET"
+        app:layout_constraintStart_toEndOf="@+id/button1Device3on"
+        app:layout_constraintTop_toBottomOf="@+id/button1Device3off" />
+</android.support.constraint.ConstraintLayout>
