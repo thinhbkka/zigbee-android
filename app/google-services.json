@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "63544973310",
+    "firebase_url": "https://zigbee-ver-2.firebaseio.com",
+    "project_id": "zigbee-ver-2",
+    "storage_bucket": "zigbee-ver-2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63544973310:android:f6b38e550d914fb0",
+        "android_client_info": {
+          "package_name": "com.example.myhouse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "63544973310-j9t960t5nuctvbudb27d8vcrl1ervf3t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myhouse",
+            "certificate_hash": "53fa333c511f07e1fd6c2c9124f76a8554f558b5"
+          }
+        },
+        {
+          "client_id": "63544973310-ae5kil99tp3d78urmd3fk0adhtbhelfm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEGo6qwEP6s0RwM_MKdHr8G1WHsjUzywU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "63544973310-ae5kil99tp3d78urmd3fk0adhtbhelfm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
